@@ -1,0 +1,97 @@
+#s4-workspace{
+    .selectric-wrapper{
+        cursor:pointer;
+        position:relative;
+        &.selectric-open{
+            z-index:999;
+            /*.selectric{
+                .button{
+                    &:after{
+                        transform:rotate(225deg);
+                    }
+                }
+            }*/
+            .selectric-items{
+                opacity:1;
+                visibility:visible;
+            }
+        }
+        &.selectric-above{
+            .selectric-items{
+                bottom:calc(100% - 1px);
+                top:auto;
+            }
+        }
+        .selectric-hide-select{
+            display:none;
+        }
+        .selectric{
+            border:none;
+            border-bottom:1px solid $grey-light;
+            cursor:pointer;
+            position:relative;
+            .label{
+                color:$grey-dark;
+                display:block;
+                font-size:14px;
+                height:43px;
+                white-space:nowrap;
+                line-height:43px;
+                margin:0 43px 0 15px;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                user-select:none;
+            }
+            .button{
+                align-items:center;
+                display:flex;
+                font-size:0;
+                height:43px;
+                justify-content:center;
+                width:43px;
+                position:absolute;
+                right:0;
+                top:0;
+                &:after{
+                    border-right:1px solid $green-light;
+                    border-bottom:1px solid $green-light;
+                    content:"";
+                    height:11px;
+                    width:11px;
+                    margin:-6px 0 0 0;
+                    transform:rotate(45deg);
+                }
+            }
+        }
+        .selectric-items{
+            background-color:$white;
+            border:1px solid $grey-light;
+            box-shadow:-10px 14px 34px rgba($black,.15);
+            width:100%;
+            left:0;
+            opacity:0;
+            position:absolute;
+            top:calc(100% - 1px);
+            visibility:hidden;
+            transition:opacity $transition;
+            .selectric-scroll{
+                height:100%;
+                overflow:auto;
+                li{
+                    color:$black;
+                    cursor:pointer;
+                    font-size:14px;
+                    padding:15px;
+                    transition:background-color $transition;
+                    &.highlighted,
+                    &:hover{
+                        background-color:rgba($green-light,10%);
+                    }
+                }
+            }
+        }
+        .selectric-input{
+            display:none;
+        }
+    }
+}

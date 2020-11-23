@@ -1,0 +1,32 @@
+#s4-workspace{
+    .footer{
+        background-color:$grey-dark;
+        color:$white;
+        padding:40px;
+        .column{
+            .h4{
+                color:$green-light;
+                font-weight:700;
+                margin:0 0 10px 0;
+            }
+            .p{
+                line-height:1.9;
+            }
+            .list-links{
+                .item{
+                    line-height:1.9;
+                    margin:0 0 10px 0;
+                    &:last-of-type{
+                        margin:0;
+                    }
+                    .a{
+                        display:inline-block;
+                        &.e-mail{
+                            text-decoration:underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,751 @@
+<!DOCTYPE html>	
+	<html>
+		<head>
+			<link href="dist/css/default-dist.css" rel="stylesheet" type="text/css" />
+			<meta charset="utf-8">
+			<meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
+			<title>Balcão de Consórcios</title>
+		</head>
+		<body>
+
+			<div id="s4-workspace">
+				<header class="header">
+					<div class="content">
+						<h2 class="h2">Balcão de Consórcios</h2>
+						<form class="form">
+							<input class="input" placeholder="Buscar pelo código da oferta ou número do grupo/cota..." type="search" />
+							<i class="icon search"><svg class="svg" viewbox="0.007729936856776476 -0.00003339717659400776 19.9923038482666 19.993305206298828"><path d="M17.486 2.515A8.53 8.53 0 0011.414 0a8.53 8.53 0 00-6.072 2.515 8.53 8.53 0 00-2.515 6.072c0 2.097.747 4.079 2.115 5.643l-4.77 4.769a.587.587 0 00.83.83l4.77-4.77a8.523 8.523 0 005.642 2.115 8.53 8.53 0 006.072-2.515A8.531 8.531 0 0020 8.587a8.53 8.53 0 00-2.515-6.072zm-.83 11.314c-2.89 2.89-7.594 2.89-10.484 0-2.89-2.89-2.89-7.594 0-10.484a7.39 7.39 0 015.242-2.168c1.898 0 3.797.722 5.242 2.168 2.89 2.89 2.89 7.594 0 10.484z"></path></svg></i>
+						</form>
+						<a class="a btn popup-trigger" href="#popup-new">Adicionar anúncio <i class="icon plus"><svg class="svg" viewbox="5 6 20 18"><path d="M15 6v18M5 15h20"></path></svg></i></a href="#">
+					</div>
+				</header>
+				<main class="main">
+					<section class="section-filters">
+						<div class="row no-gutters">
+							<div class="column-1">
+								<div class="filters">
+									<h3 class="h3">Filtros</h3>
+									<div class="filter-wrapper">
+										<div class="filter">
+											<h5 class="h5">Categoria</h5>
+											<ul class="ul list-filter">
+												<li class="item">
+													<input class="input" id="moto" type="checkbox" value="Moto" />
+													<label class="label" for="moto">Moto (2)</label>
+												</li>
+												<li class="item">
+													<input class="input" id="pesado" type="checkbox" value="Pesado" />
+													<label class="label" for="pesado">Pesado (2)</label>
+												</li>
+												<li class="item">
+													<input class="input" id="carro" type="checkbox" value="Carro" />
+													<label class="label" for="carro">Carro (2)</label>
+												</li>
+												<li class="item">
+													<input class="input" id="imovel" type="checkbox" value="Imóvel" />
+													<label class="label" for="imovel">Imóvel (2)</label>
+												</li>
+												<li class="item">
+													<input class="input" id="servico" type="checkbox" value="Serviço" />
+													<label class="label" for="servico">Serviço (2)</label>
+												</li>
+												<li class="item">
+													<input class="input" id="moveis-planejados" type="checkbox" value="Móveis Planejados" />
+													<label class="label" for="moveis-planejados">Móveis Planejados (2)</label>
+												</li>
+											</ul>
+										</div>
+										<div class="filter">
+											<h5 class="h5">Tipo de Carta</h5>
+											<ul class="ul list-filter">
+												<li class="item">
+													<input class="input" id="contemplada" type="checkbox" value="Contemplada" />
+													<label class="label" for="contemplada">Contemplada (1)</label>
+												</li>
+												<li class="item">
+													<input class="input" id="nao-contemplada" type="checkbox" value="Não contemplada" />
+													<label class="label" for="nao-contemplada">Não contemplada (1)</label>
+												</li>
+											</ul>
+										</div>
+										<div class="filter">
+											<h5 class="h5">Visualização</h5>
+											<ul class="ul list-filter">
+												<li class="item">
+													<input class="input" id="cooperativa" type="checkbox" value="Cooperativa" />
+													<label class="label" for="cooperativa">Cooperativa (8)</label>
+												</li>
+												<li class="item">
+													<input class="input" id="central" type="checkbox" value="Central" />
+													<label class="label" for="central">Central (3)</label>
+												</li>
+												<li class="item">
+													<input class="input" id="sistemico" type="checkbox" value="Sistêmico" />
+													<label class="label" for="sistemico">Sistêmico (2)</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="column-2">
+								<div class="filters-result">
+									<div class="wrapper">
+										<div class="row justify-content-between">
+											<div class="col-auto">
+												<ul class="ul list-test">
+													<li class="item"><a class="a" href="#">Moto (2) <i class="icon close"><svg class="svg" viewbox="5 5 10 10"><path d="M5 5l10 10M5 15L15 5"></path></svg></i></a></li>
+													<li class="item"><a class="a" href="#">Pesado (2) <i class="icon close"><svg class="svg" viewbox="5 5 10 10"><path d="M5 5l10 10M5 15L15 5"></path></svg></i></a></li>
+													<li class="item"><a class="a" href="#">Móveis Planejados (2) <i class="icon close"><svg class="svg" viewbox="5 5 10 10"><path d="M5 5l10 10M5 15L15 5"></path></svg></i></a></li>
+												</ul>
+											</div>
+											<div class="col-auto d-flex">
+												<select class="select selectric">
+													<option>Mais recentes</option>
+													<option>Mais recentes</option>
+													<option>Mais recentes</option>
+													<option>Mais recentes</option>
+												</select>
+												<a href="#" class="a btn">Exportar <i class="icon download"><svg viewbox="3 5 14 11"><path d="M3 9.5l7 6.5 7-6.5M10 5v11"></path></svg></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="wrapper">
+										<ul class="ul list-filters-result">
+											<li class="item">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="0 16 79.99905395507812 48.28301239013672"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.244 61.983a6.897 6.897 0 100-13.795 6.897 6.897 0 000 13.795zm0 2.3a9.197 9.197 0 100-18.394 9.197 9.197 0 000 18.393zM62.077 61.983a6.897 6.897 0 100-13.795 6.897 6.897 0 000 13.795zm0 2.3a9.197 9.197 0 100-18.394 9.197 9.197 0 100 18.393z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.541 19.102c-.882.665-1.98 1.827-3.064 3.779l-.007.012-.007.013C4.007 30.48 2.492 40.628 2.3 44.766v6.296h7.974a7.996 7.996 0 00-.891 2.3H0v-8.649l.001-.026c.196-4.306 1.747-14.893 6.473-22.935 1.213-2.18 2.508-3.6 3.683-4.486C11.306 16.401 12.407 16 13.22 16h33.977l10.396 16.748 17.39 2.23a5.748 5.748 0 014.981 6.335l-.77 6.935a5.748 5.748 0 01-5.713 5.113h-3.542a7.997 7.997 0 00-.891-2.299h4.433a3.449 3.449 0 003.428-3.068l.77-6.935a3.449 3.449 0 00-2.989-3.801l-18.474-2.369L45.919 18.3H13.22c-.144 0-.768.117-1.679.803zm43.566 31.96H24.214c.408.706.713 1.48.892 2.3h29.11c.179-.82.483-1.594.89-2.3z"></path></svg>
+															<strong class="figcaption">Carro</strong>
+														</div>
+														<strong class="price">R$ 32.990,00</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 413,14</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Luciano</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Maringá Velho</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item">
+												<a class="a popup-trigger" href="#popup-detail">
+													<div class="wrapper">
+														<strong class="category">Contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="4.9994401931762695 4.999731063842773 70.0007553100586 70.0002670288086"><path fill-rule="evenodd" clip-rule="evenodd" d="M64.5 27.5a1 1 0 011 1V74a1 1 0 01-1 1H15a1 1 0 01-1-1V29.5a1 1 0 112 0V73h47.5V28.5a1 1 0 011-1z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M39.326 5.261a1 1 0 011.348 0l34 31a1 1 0 01-1.348 1.478L40 7.353 6.674 37.74a1 1 0 11-1.348-1.478l34-31zM29.5 50a1 1 0 011-1H49a1 1 0 011 1v24a1 1 0 11-2 0V51H31.5v23a1 1 0 11-2 0V50z"></path></svg>
+															<strong class="figcaption">Imóvel</strong>
+														</div>
+														<strong class="price">R$ 108.284,83</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 655,12</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Anderson</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Japurá</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="0 11 80 57.14300537109375"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 55c0-9.468 7.675-17.143 17.143-17.143h9.143c9.468 0 17.143 7.675 17.143 17.143v1.143c0 .631-.512 1.143-1.143 1.143H1.143A1.143 1.143 0 010 56.143V55zm17.143-14.857C8.937 40.143 2.286 46.795 2.286 55h38.857c0-8.205-6.652-14.857-14.857-14.857h-9.143z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M46.286 12.143c0-.631.511-1.143 1.143-1.143H52a6.857 6.857 0 016.857 6.857v23.429c0 8.205-6.652 14.857-14.857 14.857h-1.143a1.143 1.143 0 010-2.286H44c6.943 0 12.571-5.628 12.571-12.571V17.857A4.571 4.571 0 0052 13.286h-4.571a1.143 1.143 0 01-1.143-1.143z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M57.143 40.714c0-.631.511-1.143 1.143-1.143h8C73.86 39.571 80 45.711 80 53.286v.571c0 .631-.512 1.143-1.143 1.143H49.714a1.143 1.143 0 010-2.286H77.7c-.298-6.046-5.294-10.857-11.414-10.857h-8a1.143 1.143 0 01-1.143-1.143zM0 28.143C0 27.512.512 27 1.143 27h33.195a5.09 5.09 0 015.09 5.09 8.052 8.052 0 01-8.051 8.053H12c-6.627 0-12-5.373-12-12zm2.352 1.143c.566 4.826 4.67 8.571 9.648 8.571h19.377a5.766 5.766 0 005.766-5.766 2.805 2.805 0 00-2.805-2.805H2.352zM8 56.714a9.143 9.143 0 1018.286 0h2.285c0 6.312-5.116 11.429-11.428 11.429-6.312 0-11.429-5.117-11.429-11.429H8z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M54.094 54.428c-.248.91-.38 1.869-.38 2.858 0 5.996 4.861 10.857 10.858 10.857 5.996 0 10.857-4.861 10.857-10.857 0-.99-.133-1.947-.38-2.858h-2.394a8.571 8.571 0 11-16.167 0h-2.394z"></path></svg>
+															<strong class="figcaption">Moto</strong>
+														</div>
+														<strong class="price">R$ 108.284,83</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 655,12</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Gabriela</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Araras</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item not-contemplated">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Não contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="5.0000410079956055 4.999933242797852 70.36174011230469 70.0623779296875"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.602 7.92l6.873 6.873a1 1 0 010 1.414l-6 6a1 1 0 01-1.415 0l-7.395-7.395c-3.197 9.131 5.774 17.897 14.867 14.4a1.62 1.62 0 011.728.366l25.936 25.936c.441.442.592 1.096.387 1.686-3.117 8.985 5.319 17.642 14.33 14.86l-6.853-6.853a1 1 0 010-1.414l6-6a1 1 0 011.393-.021l7.359 6.926c2.83-9.031-5.842-17.505-14.845-14.382a1.629 1.629 0 01-1.685-.387L30.837 24.484a1.642 1.642 0 01-.403-1.662c2.942-9.191-5.741-17.788-14.832-14.902zm16.802 15.303C35.691 12.407 25.27 2.38 14.551 6.163l-1.116.394a1 1 0 00-.375 1.65l7.293 7.293-4.586 4.586-7.792-7.793a1 1 0 00-1.645.36l-.465 1.255C1.886 24.65 12.329 35.07 23.018 31.165l25.6 25.6c-3.476 10.562 6.583 20.645 17.194 17.108l1.272-.424a1 1 0 00.39-1.656L60.183 64.5l4.607-4.607 7.793 7.335a1 1 0 001.634-.412l.424-1.272c3.537-10.61-6.546-20.67-17.107-17.193L32.404 23.223z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M25.568 44.785a1 1 0 011.406.008l9 9a1 1 0 01-.007 1.422L17.709 73.067a7 7 0 01-9.844-.055l-.514-.514a7 7 0 01.056-9.955l18.161-17.758zm.691 2.121L8.805 63.973a5 5 0 00-.04 7.11l.514.515a5 5 0 007.031.04l17.535-17.146-7.585-7.586zM69.302 5.115a1 1 0 011.173.178l4.5 4.5a1 1 0 01.187 1.154l-4.5 9a1 1 0 01-.625.516l-12.248 3.43-12.814 12.814a1 1 0 11-1.415-1.414l12.804-12.804 2.933-11.732a1 1 0 01.505-.642l9.5-5zM58.655 21.573l10.416-2.916 3.98-7.96-3.47-3.469-8.452 4.449-2.474 9.896z"></path></svg>
+															<strong class="figcaption">Serviço</strong>
+														</div>
+														<strong class="price">R$ 12.000,00</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 402,11</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Beatriz</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Itapira</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="5 14 70 52"><path fill-rule="evenodd" clip-rule="evenodd" d="M74 48.5H6v-2h68v2z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M51.5 29.5v18h-2v-18h2zM17.5 64a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 2a6.5 6.5 0 100-13 6.5 6.5 0 000 13zM62.5 64a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 2a6.5 6.5 0 100-13 6.5 6.5 0 000 13z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5 17a3 3 0 013-3h40.5a3 3 0 013 3v11.5H62a1 1 0 01.658.247l12 10.5A1 1 0 0175 40v18.5a2 2 0 01-2 2h-5v-2h5V40.454L61.624 30.5H50.5a1 1 0 01-1-1V17a1 1 0 00-1-1H8a1 1 0 00-1 1v41.5h5v2H7a2 2 0 01-2-2V17zm52 41.5H23v2h34v-2z"></path></svg>
+															<strong class="figcaption">Pesado</strong>
+														</div>
+														<strong class="price">R$ 98.990,00</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 529,40</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Carlos</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Piracicaba</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item not-contemplated">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Não contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="6 6 68 68.50007629394531"><path fill-rule="evenodd" clip-rule="evenodd" d="M57 8H23a3 3 0 00-3 3v32a3 3 0 003 3h34a3 3 0 003-3V11a3 3 0 00-3-3zM23 6a5 5 0 00-5 5v32a5 5 0 005 5h34a5 5 0 005-5V11a5 5 0 00-5-5H23z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M72 25H8v32a3 3 0 003 3h58a3 3 0 003-3V25zM8 23a2 2 0 00-2 2v32a5 5 0 005 5h58a5 5 0 005-5V25a2 2 0 00-2-2H8z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24.385 60.577a1 1 0 01.538 1.308l-5 12a1 1 0 01-1.846-.77l5-12a1 1 0 011.308-.538zM55.615 60.577a1 1 0 00-.538 1.308l5 12a1 1 0 001.846-.77l-5-12a1 1 0 00-1.308-.538z"></path></svg>
+															<strong class="figcaption">Móveis Planejados</strong>
+														</div>
+														<strong class="price">R$ 12.000,00</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 402,11</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Beatriz</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Itapira</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="0 16 79.99905395507812 48.28301239013672"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.244 61.983a6.897 6.897 0 100-13.795 6.897 6.897 0 000 13.795zm0 2.3a9.197 9.197 0 100-18.394 9.197 9.197 0 000 18.393zM62.077 61.983a6.897 6.897 0 100-13.795 6.897 6.897 0 000 13.795zm0 2.3a9.197 9.197 0 100-18.394 9.197 9.197 0 100 18.393z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.541 19.102c-.882.665-1.98 1.827-3.064 3.779l-.007.012-.007.013C4.007 30.48 2.492 40.628 2.3 44.766v6.296h7.974a7.996 7.996 0 00-.891 2.3H0v-8.649l.001-.026c.196-4.306 1.747-14.893 6.473-22.935 1.213-2.18 2.508-3.6 3.683-4.486C11.306 16.401 12.407 16 13.22 16h33.977l10.396 16.748 17.39 2.23a5.748 5.748 0 014.981 6.335l-.77 6.935a5.748 5.748 0 01-5.713 5.113h-3.542a7.997 7.997 0 00-.891-2.299h4.433a3.449 3.449 0 003.428-3.068l.77-6.935a3.449 3.449 0 00-2.989-3.801l-18.474-2.369L45.919 18.3H13.22c-.144 0-.768.117-1.679.803zm43.566 31.96H24.214c.408.706.713 1.48.892 2.3h29.11c.179-.82.483-1.594.89-2.3z"></path></svg>
+															<strong class="figcaption">Carro</strong>
+														</div>
+														<strong class="price">R$ 32.990,00</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 413,14</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Luciano</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Maringá Velho</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item">
+												<a class="a popup-trigger" href="#popup-detail">
+													<div class="wrapper">
+														<strong class="category">Contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="4.9994401931762695 4.999731063842773 70.0007553100586 70.0002670288086"><path fill-rule="evenodd" clip-rule="evenodd" d="M64.5 27.5a1 1 0 011 1V74a1 1 0 01-1 1H15a1 1 0 01-1-1V29.5a1 1 0 112 0V73h47.5V28.5a1 1 0 011-1z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M39.326 5.261a1 1 0 011.348 0l34 31a1 1 0 01-1.348 1.478L40 7.353 6.674 37.74a1 1 0 11-1.348-1.478l34-31zM29.5 50a1 1 0 011-1H49a1 1 0 011 1v24a1 1 0 11-2 0V51H31.5v23a1 1 0 11-2 0V50z"></path></svg>
+															<strong class="figcaption">Imóvel</strong>
+														</div>
+														<strong class="price">R$ 108.284,83</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 655,12</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Anderson</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Japurá</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="0 11 80 57.14300537109375"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 55c0-9.468 7.675-17.143 17.143-17.143h9.143c9.468 0 17.143 7.675 17.143 17.143v1.143c0 .631-.512 1.143-1.143 1.143H1.143A1.143 1.143 0 010 56.143V55zm17.143-14.857C8.937 40.143 2.286 46.795 2.286 55h38.857c0-8.205-6.652-14.857-14.857-14.857h-9.143z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M46.286 12.143c0-.631.511-1.143 1.143-1.143H52a6.857 6.857 0 016.857 6.857v23.429c0 8.205-6.652 14.857-14.857 14.857h-1.143a1.143 1.143 0 010-2.286H44c6.943 0 12.571-5.628 12.571-12.571V17.857A4.571 4.571 0 0052 13.286h-4.571a1.143 1.143 0 01-1.143-1.143z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M57.143 40.714c0-.631.511-1.143 1.143-1.143h8C73.86 39.571 80 45.711 80 53.286v.571c0 .631-.512 1.143-1.143 1.143H49.714a1.143 1.143 0 010-2.286H77.7c-.298-6.046-5.294-10.857-11.414-10.857h-8a1.143 1.143 0 01-1.143-1.143zM0 28.143C0 27.512.512 27 1.143 27h33.195a5.09 5.09 0 015.09 5.09 8.052 8.052 0 01-8.051 8.053H12c-6.627 0-12-5.373-12-12zm2.352 1.143c.566 4.826 4.67 8.571 9.648 8.571h19.377a5.766 5.766 0 005.766-5.766 2.805 2.805 0 00-2.805-2.805H2.352zM8 56.714a9.143 9.143 0 1018.286 0h2.285c0 6.312-5.116 11.429-11.428 11.429-6.312 0-11.429-5.117-11.429-11.429H8z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M54.094 54.428c-.248.91-.38 1.869-.38 2.858 0 5.996 4.861 10.857 10.858 10.857 5.996 0 10.857-4.861 10.857-10.857 0-.99-.133-1.947-.38-2.858h-2.394a8.571 8.571 0 11-16.167 0h-2.394z"></path></svg>
+															<strong class="figcaption">Moto</strong>
+														</div>
+														<strong class="price">R$ 108.284,83</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 655,12</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Gabriela</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Araras</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item not-contemplated">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Não contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="5.0000410079956055 4.999933242797852 70.36174011230469 70.0623779296875"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.602 7.92l6.873 6.873a1 1 0 010 1.414l-6 6a1 1 0 01-1.415 0l-7.395-7.395c-3.197 9.131 5.774 17.897 14.867 14.4a1.62 1.62 0 011.728.366l25.936 25.936c.441.442.592 1.096.387 1.686-3.117 8.985 5.319 17.642 14.33 14.86l-6.853-6.853a1 1 0 010-1.414l6-6a1 1 0 011.393-.021l7.359 6.926c2.83-9.031-5.842-17.505-14.845-14.382a1.629 1.629 0 01-1.685-.387L30.837 24.484a1.642 1.642 0 01-.403-1.662c2.942-9.191-5.741-17.788-14.832-14.902zm16.802 15.303C35.691 12.407 25.27 2.38 14.551 6.163l-1.116.394a1 1 0 00-.375 1.65l7.293 7.293-4.586 4.586-7.792-7.793a1 1 0 00-1.645.36l-.465 1.255C1.886 24.65 12.329 35.07 23.018 31.165l25.6 25.6c-3.476 10.562 6.583 20.645 17.194 17.108l1.272-.424a1 1 0 00.39-1.656L60.183 64.5l4.607-4.607 7.793 7.335a1 1 0 001.634-.412l.424-1.272c3.537-10.61-6.546-20.67-17.107-17.193L32.404 23.223z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M25.568 44.785a1 1 0 011.406.008l9 9a1 1 0 01-.007 1.422L17.709 73.067a7 7 0 01-9.844-.055l-.514-.514a7 7 0 01.056-9.955l18.161-17.758zm.691 2.121L8.805 63.973a5 5 0 00-.04 7.11l.514.515a5 5 0 007.031.04l17.535-17.146-7.585-7.586zM69.302 5.115a1 1 0 011.173.178l4.5 4.5a1 1 0 01.187 1.154l-4.5 9a1 1 0 01-.625.516l-12.248 3.43-12.814 12.814a1 1 0 11-1.415-1.414l12.804-12.804 2.933-11.732a1 1 0 01.505-.642l9.5-5zM58.655 21.573l10.416-2.916 3.98-7.96-3.47-3.469-8.452 4.449-2.474 9.896z"></path></svg>
+															<strong class="figcaption">Serviço</strong>
+														</div>
+														<strong class="price">R$ 12.000,00</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 402,11</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Beatriz</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Itapira</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="5 14 70 52"><path fill-rule="evenodd" clip-rule="evenodd" d="M74 48.5H6v-2h68v2z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M51.5 29.5v18h-2v-18h2zM17.5 64a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 2a6.5 6.5 0 100-13 6.5 6.5 0 000 13zM62.5 64a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 2a6.5 6.5 0 100-13 6.5 6.5 0 000 13z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5 17a3 3 0 013-3h40.5a3 3 0 013 3v11.5H62a1 1 0 01.658.247l12 10.5A1 1 0 0175 40v18.5a2 2 0 01-2 2h-5v-2h5V40.454L61.624 30.5H50.5a1 1 0 01-1-1V17a1 1 0 00-1-1H8a1 1 0 00-1 1v41.5h5v2H7a2 2 0 01-2-2V17zm52 41.5H23v2h34v-2z"></path></svg>
+															<strong class="figcaption">Pesado</strong>
+														</div>
+														<strong class="price">R$ 98.990,00</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 529,40</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Carlos</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Piracicaba</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item not-contemplated">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Não contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="6 6 68 68.50007629394531"><path fill-rule="evenodd" clip-rule="evenodd" d="M57 8H23a3 3 0 00-3 3v32a3 3 0 003 3h34a3 3 0 003-3V11a3 3 0 00-3-3zM23 6a5 5 0 00-5 5v32a5 5 0 005 5h34a5 5 0 005-5V11a5 5 0 00-5-5H23z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M72 25H8v32a3 3 0 003 3h58a3 3 0 003-3V25zM8 23a2 2 0 00-2 2v32a5 5 0 005 5h58a5 5 0 005-5V25a2 2 0 00-2-2H8z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24.385 60.577a1 1 0 01.538 1.308l-5 12a1 1 0 01-1.846-.77l5-12a1 1 0 011.308-.538zM55.615 60.577a1 1 0 00-.538 1.308l5 12a1 1 0 001.846-.77l-5-12a1 1 0 00-1.308-.538z"></path></svg>
+															<strong class="figcaption">Móveis Planejados</strong>
+														</div>
+														<strong class="price">R$ 12.000,00</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 402,11</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Beatriz</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Itapira</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="0 16 79.99905395507812 48.28301239013672"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.244 61.983a6.897 6.897 0 100-13.795 6.897 6.897 0 000 13.795zm0 2.3a9.197 9.197 0 100-18.394 9.197 9.197 0 000 18.393zM62.077 61.983a6.897 6.897 0 100-13.795 6.897 6.897 0 000 13.795zm0 2.3a9.197 9.197 0 100-18.394 9.197 9.197 0 100 18.393z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.541 19.102c-.882.665-1.98 1.827-3.064 3.779l-.007.012-.007.013C4.007 30.48 2.492 40.628 2.3 44.766v6.296h7.974a7.996 7.996 0 00-.891 2.3H0v-8.649l.001-.026c.196-4.306 1.747-14.893 6.473-22.935 1.213-2.18 2.508-3.6 3.683-4.486C11.306 16.401 12.407 16 13.22 16h33.977l10.396 16.748 17.39 2.23a5.748 5.748 0 014.981 6.335l-.77 6.935a5.748 5.748 0 01-5.713 5.113h-3.542a7.997 7.997 0 00-.891-2.299h4.433a3.449 3.449 0 003.428-3.068l.77-6.935a3.449 3.449 0 00-2.989-3.801l-18.474-2.369L45.919 18.3H13.22c-.144 0-.768.117-1.679.803zm43.566 31.96H24.214c.408.706.713 1.48.892 2.3h29.11c.179-.82.483-1.594.89-2.3z"></path></svg>
+															<strong class="figcaption">Carro</strong>
+														</div>
+														<strong class="price">R$ 32.990,00</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 413,14</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Luciano</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Maringá Velho</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item">
+												<a class="a popup-trigger" href="#popup-detail">
+													<div class="wrapper">
+														<strong class="category">Contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="4.9994401931762695 4.999731063842773 70.0007553100586 70.0002670288086"><path fill-rule="evenodd" clip-rule="evenodd" d="M64.5 27.5a1 1 0 011 1V74a1 1 0 01-1 1H15a1 1 0 01-1-1V29.5a1 1 0 112 0V73h47.5V28.5a1 1 0 011-1z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M39.326 5.261a1 1 0 011.348 0l34 31a1 1 0 01-1.348 1.478L40 7.353 6.674 37.74a1 1 0 11-1.348-1.478l34-31zM29.5 50a1 1 0 011-1H49a1 1 0 011 1v24a1 1 0 11-2 0V51H31.5v23a1 1 0 11-2 0V50z"></path></svg>
+															<strong class="figcaption">Imóvel</strong>
+														</div>
+														<strong class="price">R$ 108.284,83</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 655,12</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Anderson</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Japurá</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="0 11 80 57.14300537109375"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 55c0-9.468 7.675-17.143 17.143-17.143h9.143c9.468 0 17.143 7.675 17.143 17.143v1.143c0 .631-.512 1.143-1.143 1.143H1.143A1.143 1.143 0 010 56.143V55zm17.143-14.857C8.937 40.143 2.286 46.795 2.286 55h38.857c0-8.205-6.652-14.857-14.857-14.857h-9.143z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M46.286 12.143c0-.631.511-1.143 1.143-1.143H52a6.857 6.857 0 016.857 6.857v23.429c0 8.205-6.652 14.857-14.857 14.857h-1.143a1.143 1.143 0 010-2.286H44c6.943 0 12.571-5.628 12.571-12.571V17.857A4.571 4.571 0 0052 13.286h-4.571a1.143 1.143 0 01-1.143-1.143z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M57.143 40.714c0-.631.511-1.143 1.143-1.143h8C73.86 39.571 80 45.711 80 53.286v.571c0 .631-.512 1.143-1.143 1.143H49.714a1.143 1.143 0 010-2.286H77.7c-.298-6.046-5.294-10.857-11.414-10.857h-8a1.143 1.143 0 01-1.143-1.143zM0 28.143C0 27.512.512 27 1.143 27h33.195a5.09 5.09 0 015.09 5.09 8.052 8.052 0 01-8.051 8.053H12c-6.627 0-12-5.373-12-12zm2.352 1.143c.566 4.826 4.67 8.571 9.648 8.571h19.377a5.766 5.766 0 005.766-5.766 2.805 2.805 0 00-2.805-2.805H2.352zM8 56.714a9.143 9.143 0 1018.286 0h2.285c0 6.312-5.116 11.429-11.428 11.429-6.312 0-11.429-5.117-11.429-11.429H8z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M54.094 54.428c-.248.91-.38 1.869-.38 2.858 0 5.996 4.861 10.857 10.858 10.857 5.996 0 10.857-4.861 10.857-10.857 0-.99-.133-1.947-.38-2.858h-2.394a8.571 8.571 0 11-16.167 0h-2.394z"></path></svg>
+															<strong class="figcaption">Moto</strong>
+														</div>
+														<strong class="price">R$ 108.284,83</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 655,12</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Gabriela</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Araras</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item not-contemplated">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Não contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="5.0000410079956055 4.999933242797852 70.36174011230469 70.0623779296875"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.602 7.92l6.873 6.873a1 1 0 010 1.414l-6 6a1 1 0 01-1.415 0l-7.395-7.395c-3.197 9.131 5.774 17.897 14.867 14.4a1.62 1.62 0 011.728.366l25.936 25.936c.441.442.592 1.096.387 1.686-3.117 8.985 5.319 17.642 14.33 14.86l-6.853-6.853a1 1 0 010-1.414l6-6a1 1 0 011.393-.021l7.359 6.926c2.83-9.031-5.842-17.505-14.845-14.382a1.629 1.629 0 01-1.685-.387L30.837 24.484a1.642 1.642 0 01-.403-1.662c2.942-9.191-5.741-17.788-14.832-14.902zm16.802 15.303C35.691 12.407 25.27 2.38 14.551 6.163l-1.116.394a1 1 0 00-.375 1.65l7.293 7.293-4.586 4.586-7.792-7.793a1 1 0 00-1.645.36l-.465 1.255C1.886 24.65 12.329 35.07 23.018 31.165l25.6 25.6c-3.476 10.562 6.583 20.645 17.194 17.108l1.272-.424a1 1 0 00.39-1.656L60.183 64.5l4.607-4.607 7.793 7.335a1 1 0 001.634-.412l.424-1.272c3.537-10.61-6.546-20.67-17.107-17.193L32.404 23.223z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M25.568 44.785a1 1 0 011.406.008l9 9a1 1 0 01-.007 1.422L17.709 73.067a7 7 0 01-9.844-.055l-.514-.514a7 7 0 01.056-9.955l18.161-17.758zm.691 2.121L8.805 63.973a5 5 0 00-.04 7.11l.514.515a5 5 0 007.031.04l17.535-17.146-7.585-7.586zM69.302 5.115a1 1 0 011.173.178l4.5 4.5a1 1 0 01.187 1.154l-4.5 9a1 1 0 01-.625.516l-12.248 3.43-12.814 12.814a1 1 0 11-1.415-1.414l12.804-12.804 2.933-11.732a1 1 0 01.505-.642l9.5-5zM58.655 21.573l10.416-2.916 3.98-7.96-3.47-3.469-8.452 4.449-2.474 9.896z"></path></svg>
+															<strong class="figcaption">Serviço</strong>
+														</div>
+														<strong class="price">R$ 12.000,00</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 402,11</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Beatriz</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Itapira</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="5 14 70 52"><path fill-rule="evenodd" clip-rule="evenodd" d="M74 48.5H6v-2h68v2z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M51.5 29.5v18h-2v-18h2zM17.5 64a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 2a6.5 6.5 0 100-13 6.5 6.5 0 000 13zM62.5 64a4.5 4.5 0 100-9 4.5 4.5 0 000 9zm0 2a6.5 6.5 0 100-13 6.5 6.5 0 000 13z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5 17a3 3 0 013-3h40.5a3 3 0 013 3v11.5H62a1 1 0 01.658.247l12 10.5A1 1 0 0175 40v18.5a2 2 0 01-2 2h-5v-2h5V40.454L61.624 30.5H50.5a1 1 0 01-1-1V17a1 1 0 00-1-1H8a1 1 0 00-1 1v41.5h5v2H7a2 2 0 01-2-2V17zm52 41.5H23v2h34v-2z"></path></svg>
+															<strong class="figcaption">Pesado</strong>
+														</div>
+														<strong class="price">R$ 98.990,00</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 529,40</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Carlos</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Piracicaba</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li class="item not-contemplated">
+												<a class="a" href="#">
+													<div class="wrapper">
+														<strong class="category">Não contemplada</strong>
+													</div>
+													<div class="wrapper">
+														<div class="figure">
+															<svg class="svg" viewbox="6 6 68 68.50007629394531"><path fill-rule="evenodd" clip-rule="evenodd" d="M57 8H23a3 3 0 00-3 3v32a3 3 0 003 3h34a3 3 0 003-3V11a3 3 0 00-3-3zM23 6a5 5 0 00-5 5v32a5 5 0 005 5h34a5 5 0 005-5V11a5 5 0 00-5-5H23z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M72 25H8v32a3 3 0 003 3h58a3 3 0 003-3V25zM8 23a2 2 0 00-2 2v32a5 5 0 005 5h58a5 5 0 005-5V25a2 2 0 00-2-2H8z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24.385 60.577a1 1 0 01.538 1.308l-5 12a1 1 0 01-1.846-.77l5-12a1 1 0 011.308-.538zM55.615 60.577a1 1 0 00-.538 1.308l5 12a1 1 0 001.846-.77l-5-12a1 1 0 00-1.308-.538z"></path></svg>
+															<strong class="figcaption">Móveis Planejados</strong>
+														</div>
+														<strong class="price">R$ 12.000,00</strong>
+														<div class="parcels"><span class="span">Parcela</span>R$ 402,11</div>
+													</div>
+													<div class="wrapper">
+														<div class="name">
+															<i class="icon user"><svg class="svg" viewbox="1.1119999885559082 1 17.62567901611328 17.200000762939453"><path d="M10.8 10.2a4.606 4.606 0 01-4.6-4.6C6.2 3.064 8.264 1 10.8 1c2.536 0 4.6 2.064 4.6 4.6 0 2.536-2.064 4.6-4.6 4.6zm0-8a3.402 3.402 0 00-3.4 3.4C7.4 7.476 8.924 9 10.8 9s3.4-1.524 3.4-3.4-1.524-3.4-3.4-3.4z"></path><path d="M18.124 18.2H1.112l.696-5.136A4.003 4.003 0 015.772 9.6h9.168a3.803 3.803 0 013.764 4.308l-.58 4.292zM2.488 17h14.588l.44-3.252a2.595 2.595 0 00-.62-2.06 2.606 2.606 0 00-1.956-.888H5.772a2.812 2.812 0 00-2.776 2.424L2.488 17z"></path><path d="M5.6 17.6H5l.6-3.8h.6l-.6 3.8zM14.2 17.6h-.6l.6-3.8h.6l-.6 3.8z"></path></svg></i>
+															<div class="content">
+																<strong class="strong">Beatriz</strong>
+																<span class="span">1234 - Cooperativa Abc</span>
+																<span class="span">Itapira</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+				<footer class="footer">
+					<div class="row justify-content-between">
+						<div class="column col-5">
+							<h4 class="h4">Propósito do Balcão de Consórcios</h4>
+							<p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis eros augue, vitae egestas augue sagittis sit amet. Phasellus eget urna vel dui bibendum commodo. Donec elementum nisl in dapibus rhoncus. Quisque et aliquet mauris. Donec maximus sodales eros, a aliquam metus laoreet non.</p>
+						</div>
+						<div class="column col-3">
+							<h4 class="h4">Contato</h4>
+							<ul class="ul list-links">
+								<li class="item"><a class="a e-mail" href="mailto:nossascartas@sicredi.com.br">nossascartas@sicredi.com.br</a></li>
+								<li class="item">Telefone: <a class="a" href="#">(51) 3030.1010</a></li>
+							</ul>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+
+			<!-- Popup Detail -->
+			<div class="popup mfp-hide" id="popup-detail">
+				<i class="icon popup-close"><svg class="svg" viewbox="7 7 16 16"><path d="M7 7l16 16m0-16L7 23"></path></svg></i>
+				<div id="s4-workspace">
+					<div class="wrapper">
+						<table class="table">
+							<tr class="value" valign="top">
+								<td align="right">
+									<div class="figure">
+										<svg class="svg" viewbox="4.9994401931762695 4.999731063842773 70.0007553100586 70.0002670288086"><path fill-rule="evenodd" clip-rule="evenodd" d="M64.5 27.5a1 1 0 011 1V74a1 1 0 01-1 1H15a1 1 0 01-1-1V29.5a1 1 0 112 0V73h47.5V28.5a1 1 0 011-1z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M39.326 5.261a1 1 0 011.348 0l34 31a1 1 0 01-1.348 1.478L40 7.353 6.674 37.74a1 1 0 11-1.348-1.478l34-31zM29.5 50a1 1 0 011-1H49a1 1 0 011 1v24a1 1 0 11-2 0V51H31.5v23a1 1 0 11-2 0V50z"></path></svg>
+										<strong class="figcaption">Imóvel</strong>
+									</div>
+								</td>
+								<td>
+									<strong class="category">Contemplada</strong>
+									<div class="value">
+										Valor do Bem
+										<strong class="strong">R$ 108.284,83</strong>
+									</div>
+								</td>
+							</tr>
+							<tr valign="top">
+								<td>Parcela</td>
+								<td>R$ 655,12</td>
+							</tr>
+							<tr valign="top">
+								<td>Parcelas pagas</td>
+								<td>25</td>
+							</tr>
+							<tr valign="top">
+								<td>Valor pago</td>
+								<td>R$ 15.495,26</td>
+							</tr>
+							<tr valign="top">
+								<td>Parcelas a pagar</td>
+								<td>75</td>
+							</tr>
+							<tr valign="top">
+								<td>Grupo/Cota</td>
+								<td>070040-0396</td>
+							</tr>
+							<tr class="contact" valign="top">
+								<td>Contato</td>
+								<td>
+									<div class="name">
+										<div class="picture"><img class="img" alt="" src="data:image/jpeg;base64,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" /></div>
+										<div class="content">
+											<strong class="strong">Anderson</strong>
+											<span class="span">1234 - Cooperativa Abc</span>
+											<span class="span">Japurá</span>
+										</div>
+									</div>
+									<a class="a e-mail" href="mailto:anderson.silva@sicredi.com.br">anderson.silva@sicredi.com.br</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="wrapper">
+						<span class="span offer"><i class="icon cart"><svg class="svg" viewBox="0 0 20 20"><rect width="20" height="20" rx="4" fill="url(#pattern0)"></rect><rect x=".5" y=".5" width="19" height="19" rx="3.5" stroke="#000" stroke-opacity=".1"></rect><defs><pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#image0" transform="scale(.00435)"></use></pattern><image id="image0" width="230" height="230" xlink:href="data:image/png;base64,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"></image></defs></svg></i>Oferta cadastrada no Conecta</span>
+					</div>
+					<div class="wrapper">
+						<span class="span offer-date">Oferta cadastrada no Balcão de Consórcios em 17/10/2019.</span>
+					</div>
+				</div>
+			</div>
+			<!-- Popup Novo anúncio -->
+			<div class="popup mfp-hide" id="popup-new">
+				<i class="icon popup-close"><svg class="svg" viewbox="7 7 16 16"><path d="M7 7l16 16m0-16L7 23"></path></svg></i>
+				<div id="s4-workspace">
+					<h4 class="h4">Novo anúncio</h4>
+					<form class="form">
+						<div class="wrapper d-flex">
+							<select class="select selectric">
+								<option>Categoria</option>
+								<option>Categoria</option>
+								<option>Categoria</option>
+							</select>
+							<input class="input" placeholder="Grupo" type="text" />
+							<input class="input" placeholder="Cota" type="text" />
+						</div>
+						<div class="wrapper d-flex">
+							<input class="input" placeholder="Parcela atual" type="text" />
+							<input class="input" placeholder="Parcelas pagas" type="text" />
+							<input class="input" placeholder="Parcelas a pagar" type="text" />
+						</div>
+						<div class="wrapper">
+							<div class="row">
+								<div class="col-6">
+									<input class="input" placeholder="Valor pago" type="text" />
+								</div>
+								<div class="col-6">
+									<input class="input" placeholder="Valor do Bem" type="text" />
+								</div>
+							</div>
+						</div>
+						<div class="wrapper wrapper-radio">
+							<div class="row">
+								<div class="col-6">
+									<span class="span">Tipo de Carta</span>
+									<div class="input-radio">
+										<input class="input" id="nao-contemplada" name="contemplada" type="radio" value="Não contemplada" checked />
+										<label class="label" for="nao-contemplada">Não contemplada</label>
+									</div>
+									<div class="input-radio">
+										<input class="input" id="contemplada" name="contemplada" type="radio" value="Contemplada" />
+										<label class="label" for="contemplada">Contemplada</label>
+									</div>
+								</div>
+								<div class="col-6">
+									<span class="span">Cadastrada no Conecta</span>
+									<div class="input-radio">
+										<input class="input" id="sim" name="sim-nao" type="radio" value="Sim" checked />
+										<label class="label" for="sim">Sim</label>
+									</div>
+									<div class="input-radio">
+										<input class="input" id="nao" name="sim-nao" type="radio" value="Não" />
+										<label class="label" for="nao">Não</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="wrapper wrapper-radio">
+							<span class="span">Visualização</span>
+							<div class="input-radio">
+								<input class="input" id="sitemico" name="visualizacao" type="radio" value="Sistêmico" checked />
+								<label class="label" for="sitemico">Sistêmico <small class="small">Todos colaboradores do Sicredi</small></label>
+							</div>
+							<div class="input-radio">
+								<input class="input" id="cooperativa" name="visualizacao" type="radio" value="Cooperativa" />
+								<label class="label" for="cooperativa">Cooperativa <small class="small">Apenas para colaboradores da minha cooperativa</small></label>
+							</div>
+							<div class="input-radio">
+								<input class="input" id="central" name="visualizacao" type="radio" value="Central" />
+								<label class="label" for="central">Central <small class="small">Apenas para colaboradores que fazem parte da minha Central</small></label>
+							</div>
+						</div>
+						<div class="wrapper">
+							<div class="input-checkbox">
+								<input class="input" id="test" type="checkbox" value="Li e aceito todos os Termos e Condições">
+								<label class="label" for="test">Li e aceito todos os <a class="a popup-trigger" href="#popup-terms-and-conditions">Termos e Condições</a>.</label>
+							</div>
+						</div>
+						<div class="wrapper d-flex justify-content-end">
+							<button class="btn reset" type="reset">Cancelar</button>
+							<button class="btn submit" type="submit" disabled>Adicionar anúncio</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- Popup Termos e Condições -->
+			<div class="popup mfp-hide" id="popup-terms-and-conditions">
+				<i class="icon popup-close"><svg class="svg" viewbox="7 7 16 16"><path d="M7 7l16 16m0-16L7 23"></path></svg></i>
+				<div id="s4-workspace">
+					<h4 class="h4">Termos e Condições</h4>
+					<p class="p">A proposta é que você possa compartilhar os seus anúncios e também conferir as ofertas dos seus colegas de outras cooperativas, como um mural de classificados digital de cotas de consórcios.<br /><br />Todos podem postar aqui, mas as negociações devem ser realizadas pelo e-mail corporativo indicado no anúncio.<br /><br />Para fazer bom uso, antes de anunciar, confira as principais regras:<br /><br />1. Somente colaboradores podem anunciar aqui;<br /><br />2. A Administradora de Consórcios não participa e/ou interfere, de qualquer forma, na negociação, entrega e/ou efetivação de quaisquer transações;<br /><br />3. A Administradora de Consórcios não se responsabiliza pela veracidade dos anúncios nem garante quaisquer negociações;<br /><br />4. Todos as cotas anunciadas devem ser de propriedade dos consorciados e estes devem consentir o anúncio previamente;<br /><br />5. Todo anúncio fica automaticamente vinculado ao usuário que está logado na Rede Colaborativa no momento de sua criação, independentemente dos contatos informados nos campos de cadastro;<br /><br />6. O autor do anúncio poderá excluir e editar o anúncio em qualquer momento após sua publicação;<br /><br />7. Não é permitido postar mais de um anúncio para a mesma cota;<br /><br />8. Os anúncios poderão ser excluídos pelos administradores da página, mesmo após terem sido publicados, em virtude do seu conteúdo ou quaisquer quebras dos termos aqui relacionados;<br /><br />9. O colaborador é responsável por excluir o seu anúncio após a venda da cota;<br /><br />10. Os anúncios não excluídos pelos colaboradores, ficarão desabilitados automaticamente após 180 dias de sua publicação.</p>
+				</div>
+			</div>
+
+
+			<script src="dist/js/default-dist.js" type="text/javascript"></script>
+		</body>
+	</html>
