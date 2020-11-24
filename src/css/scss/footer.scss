@@ -3,7 +3,16 @@
         background-color:$grey-dark;
         color:$white;
         padding:40px;
+        @media only screen and (max-width:414px){
+            padding:20px;
+        }
         .column{
+            @media only screen and (max-width:768px){
+                margin:0 0 20px 0;
+                &:last-of-type{
+                    margin:0;
+                }
+            }
             .h4{
                 color:$green-light;
                 font-weight:700;
