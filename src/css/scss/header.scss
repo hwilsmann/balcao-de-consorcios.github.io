@@ -4,6 +4,7 @@
         color:$white;
         padding:20px 0;
         .content{
+            width:90%;
             margin:0 auto;
             max-width:680px;
             text-align:center;
@@ -20,6 +21,9 @@
                     color:rgba($white,.4);
                     font-size:17px;
                     padding-right:40px;
+                    @media only screen and (max-width:414px){
+                        font-size:14px;
+                    }
                 }
                 .icon{
                     position:absolute;
@@ -41,6 +45,9 @@
                 width:fit-content;
                 margin:0 auto;
                 transition:$transition;
+                @media only screen and (max-width:414px){
+                    font-size:16px;
+                }
                 &:hover{
                     color:$green-light;
                     .icon{

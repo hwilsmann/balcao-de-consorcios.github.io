@@ -2,13 +2,22 @@
     .section-filters{
         .column-1{
             width:280px;
+            @media only screen and (max-width:768px){
+                width:100%;
+            }
         }
         .column-2{
             width:calc(100% - 280px);
+            @media only screen and (max-width:768px){
+                width:100%;
+            }
         }
         .filters{
             background-color:$grey-light;
             padding:40px;
+            @media only screen and (max-width:414px){
+                padding:20px;
+            }
             .filter{
                 border-top:1px solid rgba($grey-dark,.2);
                 margin:20px 0 0 0;
@@ -22,14 +31,36 @@
         }
         .filters-result{
             padding:40px;
+            @media only screen and (max-width:414px){
+                padding:20px;
+            }
             >.wrapper{
                 margin:0 0 40px 0;
+                @media only screen and (max-width:414px){
+                    margin:0 0 20px 0;
+                }
                 &:last-of-type{
                     margin:0;
+                }
+                @media only screen and (max-width:1024px){
+                    .row{
+                        .col-auto{
+                            width:100%;
+                            flex-wrap:wrap;
+                            margin:0 0 20px 0;
+                            &:last-of-type{
+                                margin:0;
+                            }
+                        }
+                    }
                 }
                 .selectric-wrapper{
                     width:260px;
                     margin:0 30px 0 0;
+                    @media only screen and (max-width:1024px){
+                        width:100%;
+                        margin:0;
+                    }
                 }
                 .btn{
                     align-items:center;
@@ -37,6 +68,9 @@
                     display:flex;
                     font-size:14px;
                     padding:12px;
+                    @media only screen and (max-width:1024px){
+                        display:none;
+                    }
                     .icon{
                         margin:0 0 0 20px;
                         svg{
@@ -80,6 +114,9 @@
                 display:flex;
                 font-size:14px;
                 position:relative;
+                @media only screen and (max-width:414px){
+                    font-size:12px;
+                }
                 &:before{
                     background-color:$white;
                     border:1px solid rgba($grey-dark,.2);
@@ -110,10 +147,20 @@
     }
     .list-test{
         display:flex;
+        @media only screen and (max-width:1024px){
+            flex-wrap:wrap;
+            margin:-5px;
+        }
         .item{
             margin:0 10px 0 0;
+            @media only screen and (max-width:1024px){
+                margin:5px;
+            }
             &:last-of-type{
                 margin:0;
+                @media only screen and (max-width:1024px){
+                    margin:5px;
+                }
             }
             a{
                 align-items:center;
@@ -123,6 +170,9 @@
                 font-size:14px;
                 padding:15px;
                 transition:$transition;
+                @media only screen and (max-width:414px){
+                    font-size:12px;
+                }
                 &:hover{
                     background-color:$green;
                     color:$white;
@@ -157,6 +207,15 @@
             text-align:center;
             @media only screen and (max-width:1600px){
                 width:calc(100% / 4 - 20px);
+            }
+            @media only screen and (max-width:1200px){
+                width:calc(100% / 3 - 20px);
+            }
+            @media only screen and (max-width:1024px){
+                width:calc(100% / 2 - 20px);
+            }
+            @media only screen and (max-width:768px){
+                width:100%;
             }
             &.not-contemplated{
                 .a{
@@ -312,6 +371,9 @@
                             display:block;
                             font-size:14px;
                             transition:$transition;
+                            @media only screen and (max-width:414px){
+                                font-size:12px;
+                            }
                         }
                     }
                     .price{
@@ -326,6 +388,9 @@
                             display:block;
                             font-size:14px;
                             transition:$transition;
+                            @media only screen and (max-width:414px){
+                                font-size:12px;
+                            }
                         }
                     }
                     .name{

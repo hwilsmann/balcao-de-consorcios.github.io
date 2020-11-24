@@ -1,4 +1,7 @@
-$('.selectric').selectric();
+$('.selectric').selectric({
+    disableOnMobile:false,
+    nativeOnMobile:false
+});
 $('.popup-trigger').magnificPopup({
     showCloseBtn:false,
     preloader:false,

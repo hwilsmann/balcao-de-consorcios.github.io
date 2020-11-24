@@ -4,6 +4,9 @@
     max-width:480px;
     padding:50px;
     position:relative;
+    @media only screen and (max-width:414px){
+        padding:20px;
+    }
     .popup-close{
         cursor:pointer;
         padding:20px;
@@ -27,6 +30,17 @@
     #s4-workspace{
         .wrapper{
             margin:0 0 20px 0;
+            @media only screen and (max-width:414px){
+                flex-wrap:wrap;
+                .row{
+                    .col-sm-6{
+                        margin:0 0 10px 0;
+                        &:last-of-type{
+                            margin:0;
+                        }
+                    }
+                }
+            }
             &:last-of-type{
                 margin:0;
             }
@@ -54,6 +68,10 @@
             .selectric-wrapper{
                 margin:0 40px 0 0;
                 min-width:220px;
+                @media only screen and (max-width:414px){
+                    width:100%;
+                    margin:0 0 10px 0;
+                }
                 .selectric{
                     .label{
                         color:rgba($grey-dark,.7);
@@ -81,6 +99,9 @@
                 font-size:14px;
                 margin:0 40px 0 0;
                 padding:10px 0;
+                @media only screen and (max-width:414px){
+                    margin:0 0 10px 0;
+                }
                 &:last-of-type{
                     margin:0;
                 }
@@ -88,6 +109,13 @@
             .btn{
                 color:rgba($grey-dark,.7);
                 font-size:14px;
+                @media only screen and (max-width:414px){
+                    width:100%;
+                    margin:0 0 10px 0;
+                    &:last-of-type{
+                        margin:0;
+                    }
+                }
                 &.submit{
                     background-color:$green-light;
                     color:$white;
@@ -223,6 +251,9 @@
                     &:last-of-type{
                         color:$grey-dark;
                         font-size:16px;
+                        @media only screen and (max-width:414px){
+                            font-size:14px;
+                        }
                     }
                     .figure{
                         display:inline-block;
@@ -252,6 +283,9 @@
                             color:$grey-dark;
                             display:block;
                             font-size:32px;
+                            @media only screen and (max-width:414px){
+                                font-size:20px;
+                            }
                         }
                     }
                     .name{
