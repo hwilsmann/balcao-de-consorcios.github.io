@@ -356,7 +356,6 @@
                     }
                     .category{
                         display:block;
-                        font-style:italic;
                     }
                     .figure{
                         margin:0 0 10px 0;
@@ -368,6 +367,7 @@
                             transition:$transition;
                         }
                         .figcaption{
+                            color:$green;
                             display:block;
                             font-size:14px;
                             transition:$transition;
