@@ -1,13 +1,15 @@
-$('.selectric').selectric({
-    disableOnMobile:false,
-    nativeOnMobile:false
-});
-$('.popup-trigger').magnificPopup({
-    showCloseBtn:false,
-    preloader:false,
-    type:'inline'
-});
-$(document).on('click','.popup-close',function(e){
-    e.preventDefault();
-    $.magnificPopup.close();
+$(document).ready(function(){
+    $('.selectric').selectric({
+        disableOnMobile:false,
+        nativeOnMobile:false
+    });
+    $('.popup-trigger').magnificPopup({
+        showCloseBtn:false,
+        preloader:false,
+        type:'inline'
+    });
+    $(document).on('click','.popup-close',function(e){
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
 });

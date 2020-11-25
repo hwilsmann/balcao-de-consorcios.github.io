@@ -87,6 +87,9 @@
                     &:hover{
                         background-color:rgba($green-light,10%);
                     }
+                    &.button{
+                        display:none;
+                    }
                 }
             }
         }
